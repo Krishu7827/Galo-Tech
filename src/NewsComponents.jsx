@@ -44,9 +44,10 @@ const NewsComponent = () => {
             align={'center'}
             marginTop={'10px'}
             marginBottom={'10px'}
+            
             >News</Heading>
             <hr style={{border:'1px solid',width:"50%", margin:"auto"}}/>
-        <Box display="grid" gridTemplateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)',lg:'repeat(3, 1fr)' }} gridColumnGap={{md:'10px',lg:'10px'}} gridRowGap={{base:'10px',lg:'10px',md:'10px'}} marginTop={'20px'}>
+        <Box display="grid" gridTemplateColumns={{ base: 'repeat(1, 1fr)', md: 'repeat(3, 1fr)',lg:'repeat(3, 1fr)' }} gridColumnGap={{md:'10px',lg:'10px'}} gridRowGap={{base:'10px',lg:'10px',md:'10px'}} marginTop={'20px'} paddingLeft={{base:'10px',md:"0px",lg:"0px"}} paddingRight={{base:'10px',md:'0px', lg:'0px'}}>
          
         {News &&
           News.map((news, ind) => (

@@ -57,8 +57,8 @@ if(formData.comment && formData.email && emailRegex.test(formData.email)){
             marginBottom={'10px'}
             >Share Your Thought</Heading>
             <hr style={{border:'1px solid',width:"50%", margin:"auto"}}/>
-            
-    <Box width={'100%'} padding={{base:'10px',lg:'20px'}} bgColor={'#FCD249'} marginTop={'20px'}>
+
+    <Box width={'100%'} padding={{base:'30px',lg:'20px'}} bgColor={'#FCD249'} marginTop={'20px'}>
        
     <Box maxW="md" mx="auto" p={4} borderWidth="1px" borderRadius="lg" bgColor={'white'}>
       <form onSubmit={handleSubmit}>
@@ -85,7 +85,7 @@ if(formData.comment && formData.email && emailRegex.test(formData.email)){
             required
           />
         </Box>
-        <Button type="submit" colorScheme="teal" onClick={handleSubmit}>
+        <Button type="submit" color='black' bgColor={'var(--chakra-colors-gray-100);'} onClick={handleSubmit}>
           Send
         </Button>
       </form>
